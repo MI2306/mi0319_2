@@ -1,0 +1,2 @@
+user1,password123,田中,tanaka@example.com
+user2,securepass,MICHAEL,mm1234567@example.com

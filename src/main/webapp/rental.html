@@ -1,0 +1,134 @@
+<!DOCTYPE html> <!--必要:!DOCTYPE,html,head,body-->
+<html lang="ja"> <!--ja=日本語設定-->
+<head>
+    <meta charset="utf-8"> <!--UTF8設定-->
+    <meta name="keywords" content=""><!--TAG 關鍵字-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""><!--說明文-->
+    <title>MI'S CAVE | RENTAL</title>
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="MI'S CAVE LOGO">
+                </a>
+                <p>アクセス抜群！自由に使えるレンタルスペース</p>
+            </div>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">☰ MENU</div>
+                <ul class="menu-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="rental.html">RENTAL</a></li>
+                    <li><a href="event.html">EVENT</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="access.html">ACCESS</a></li>
+                    <li class="mobile-only"><a href="https://mibooking.azurewebsites.net/booking-entry" target="_blank">BOOKING</a></li>
+                    <li class="mobile-only"><a href="https://line.me/R/ti/p/@961irevm" target="_blank">LINE</a></li>
+                </ul>
+                <a href="https://mibooking.azurewebsites.net/booking-entry" target="_blank" class="contact-btn desktop-only">BOOKING</a>
+                <a href="https://line.me/R/ti/p/@961irevm" target="_blank" class="contact-btn desktop-only">LINE</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="center-content">
+        <body>
+            <h2 class="section-title fade-in">レンタルスペース予約</h2>
+            <section class="external-booking fade-in">
+                
+                <div class="external-booking-container">
+                    <p>予約システムへのアクセスは、以下のボタンをクリックしてください。</p>
+                    <a href="https://mibooking.azurewebsites.net/booking-entry" 
+                       class="booking-button" target="_blank" rel="noopener noreferrer">
+                       予約ページを開く
+                    </a>
+                    <p class="notice">予約前に、必ず <a href="https://docs.google.com/document/d/128nOYP5rJQ7-TBdRmmZ1ejRzhww2PXpZ-KnMQiQsqBU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">ルール</a> をお読みください。</p>
+                </div>
+            </section>
+            <h2 class="fade-in">スケジュール</h2>
+            <div class="calendar-container fade-in">
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?
+  src=addaa96599fd2d34e5ddd55fc38a001d725b4b4ab17a3dbf18619ef7a4c2552d%40group.calendar.google.com&color=%23FF5733
+  &src=b7634d313b24846e2c778688cbf110e6436a75c23541499b4b25c44618705635%40group.calendar.google.com&color=%2300A6FF
+  &src=mgbn5vss167ai0162cbnt03900%40group.calendar.google.com&color=%239C27B0
+  &ctz=Asia%2FTokyo&mode=MONTH&showCalendars=1&showTz=0"
+                  style="border: 0; width: 100%; height: 600px;"
+                  frameborder="0"
+                  scrolling="no">
+                </iframe>
+            </div>
+            <h2>レンタル料金見積りシステム</h2>
+        <div class="rental-container fade-in">
+            <div class="system-description">
+                <h3>システムの使用方法と料金計算ルール</h3>
+                <ul>
+                    <li><b>人数:</b> 入力された人数は追加サービスの計算に使用されます。</li>
+                    <li><b>予約時間（時間数）:</b> 基本料金は1時間あたり3,000円です。</li>
+                    <li><b>予約場所:</b> 少なくとも1つのフロアを選択してください。2つ目以降のフロアには1時間あたり1,500円の追加料金がかかります。</li>
+                    <li><b>追加サービス:</b> 各サービスには人数 * 200円の追加料金が発生します。(一回だけ)</li>
+                    <li><b>計算ルール:</b> 総金額 = （基本料金 + フロア追加料金 ）* 予約時間 + 追加サービス料金 * 人数。</li>
+                    <br>
+                </ul>
+            </div>
+            <div class="rental-wrapper">
+                <!-- 左側：予約フォーム -->
+                <div class="form-container">
+                    <form id="estimateForm">
+                        <label for="numPeople">人数:</label>
+                        <input type="number" id="numPeople" name="numPeople" min="1" max="25" required>
+        
+                        <label for="hours">予約時間（時間数）:</label>
+                        <input type="number" id="hours" name="hours" min="1" max="24" required>
+        
+                        <label for="venueType">予約場所:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="venue1" value="2ndFloor"> 2階</label>
+                            <label><input type="checkbox" name="venue2" value="1stFloor"> 1階</label>
+                            <label><input type="checkbox" name="venue3" value="basement"> 地下1階</label>
+                        </div>
+        
+                        <label for="extraServices">追加サービス:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="extra1" value="food"> 外食持ち込み</label>
+                            <label><input type="checkbox" name="extra2" value="pc"> パソコン借用</label>
+                            <label><input type="checkbox" name="extra3" value="stream"> 配信機材借用</label>
+                            <label><input type="checkbox" name="extra4" value="photo"> イベント撮影サービス</label>
+                        </div>
+        
+                        <button type="button" onclick="getEstimate()">見積りを取得</button>
+                        <button type="button" onclick="resetForm()" class="clear-btn">クリア</button>
+                    </form>
+                </div>
+        
+                <!-- 右側：選択結果 -->
+                <div class="result-container">
+                    <h3>選択内容</h3>
+                    <ul id="selected-options">
+                        <li>人数: <span id="selected-numPeople">-</span></li>
+                        <li>予約時間: <span id="selected-hours">-</span> 時間</li>
+                        <li>予約場所: <span id="selected-venue">-</span></li>
+                        <li>追加サービス: <span id="selected-extras">-</span></li>
+                        <li>一人平均金額: <span id="selected-average">-</span></li>
+                    </ul>
+                    <h3>見積り結果</h3>
+                    <div id="estimate-result">-</div>
+                </div>
+            </div>
+        </div>
+        
+            <script src="js/script.js"></script>
+        </body>
+    </main>
+    <button id="backToTop">⬆</button>
+</body>
+<footer>
+    <li><small>&copy;2024 MI'S CAVE</small></li>
+</footer>
+<script src="script.js"></script>
+</html>

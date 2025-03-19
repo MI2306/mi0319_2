@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!--必要:!DOCTYPE,html,head,body-->
+<html lang="ja"> <!--ja=日本語設定-->
+<head>
+    <meta charset="utf-8"> <!--UTF8設定-->
+    <meta name="keywords" content=""><!--TAG 關鍵字-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""><!--說明文-->
+    <title>MI'S CAVE | NEWS</title>
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="MI'S CAVE LOGO">
+                </a>
+                <p>アクセス抜群！自由に使えるレンタルスペース</p>
+            </div>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">☰ MENU</div>
+                <ul class="menu-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="rental.html">RENTAL</a></li>
+                    <li><a href="event.html">EVENT</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="access.html">ACCESS</a></li>
+                    <li class="mobile-only"><a href="https://mibooking.azurewebsites.net/booking-entry" target="_blank">BOOKING</a></li>
+                    <li class="mobile-only"><a href="https://line.me/R/ti/p/@961irevm" target="_blank">LINE</a></li>
+                </ul>
+                <a href="https://mibooking.azurewebsites.net/booking-entry" target="_blank" class="contact-btn desktop-only">BOOKING</a>
+                <a href="https://line.me/R/ti/p/@961irevm" target="_blank" class="contact-btn desktop-only">LINE</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="news_h2 fade-in">NEWS</h2>
+        <section class="news_section fade-in">
+            
+            <div class="news_list">
+                <!-- 第一條新聞 -->
+                <details class="news_item">
+                    <summary>
+                        <div class="news_date">2024.11.01(金)</div>
+                        <div class="news_category live">レンタルスペースに関する情報</div>
+                        <h3 class="news_title">米哥窟は本日より臨時宿泊サービスを提供開始します！</h3>
+                    </summary>
+                    <div class="news_content">
+                        <p>台北の宿泊費が高騰していることを受け、イベントに参加する多くの県外の友人が宿泊の必要性を訴えています。</p>
+                        <p>米哥窟では、イベント参加者向けに簡易宿泊サービスを提供することになりました。</p>
+                        <p>詳細は以下の通りです：</p>
+                        <p>■ 宿泊規則</p>
+                        <ul>
+                            <li>1. イベント参加者限定</li>
+                            <li>2. 簡易寝具のみ提供</li>
+                            <li>3. 夜11時以降は静かにご利用ください</li>
+                        </ul>
+                    </div>
+                </details>
+                <!-- 第二條新聞 -->
+                <details class="news_item">
+                    <summary>
+                        <div class="news_date">2024.10.01(火)</div>
+                        <div class="news_category live">レンタルスペースに関する情報</div>
+                        <h3 class="news_title">地下1階は漏水問題のため、貸し出しを一時停止しております(10/8回復しました)</h3>
+                    </summary>
+                    <div class="news_content">
+                        <p>地下室に漏水が発生し、現在修理中です。</p>
+                        <p>10月7日から約1週間、地下室のレンタルを一時停止します。</p>
+                        <p>修理が完了次第、再開予定ですので、ご理解のほどよろしくお願いいたします。</p>
+                    </div>
+                </details>
+                <!-- 第三條新聞 -->
+                <details class="news_item">
+                    <summary>
+                        <div class="news_date">2024.12.15(日)</div>
+                        <div class="news_category announcement">キャンペーンのお知らせ</div>
+                        <h3 class="news_title">クリスマス限定の特別キャンペーン開催決定！</h3>
+                    </summary>
+                    <div class="news_content">
+                        <p>今年のクリスマスを祝うために、米哥窟で特別なキャンペーンを開催します。</p>
+                        <p>4時間以上予約して、1時間無料で延長できます！</p>
+                        <p>期間：2024/12/25 23:59 まで。</p>
+                    </div>
+                </details>
+                <!-- 第四條新聞 -->
+                <details class="news_item">
+                    <summary>
+                        <div class="news_date">2024.09.20(金)</div>
+                        <div class="news_category update">スペース利用規則更新</div>
+                        <h3 class="news_title">利用規則が一部改定されました</h3>
+                    </summary>
+                    <div class="news_content">
+                        <p>レンタルスペースの利用規則が改定され、一部の時間帯で新しいルールが適用されます。</p>
+                        <p>特に深夜時間帯の利用制限や、イベント開催時のゴミ処理ルールに関する変更があります。</p>
+                        <p>詳細については「利用規則」のページをご確認ください。</p>
+                    </div>
+                </details>
+                <!-- 第五條新聞 -->
+                <details class="news_item">
+                    <summary>
+                        <div class="news_date">2024.08.05(月)</div>
+                        <div class="news_category maintenance">設備点検のお知らせ</div>
+                        <h3 class="news_title">空調設備の点検と一時利用停止について</h3>
+                    </summary>
+                    <div class="news_content">
+                        <p>施設内の空調設備の定期点検を行うため、一部スペースの利用を一時的に停止させていただきます。</p>
+                        <p>点検期間：2024年8月10日〜8月12日</p>
+                        <p>ご不便をおかけいたしますが、ご理解とご協力のほどよろしくお願いいたします。</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <li><small>&copy;2024 MI'S CAVE</small></li>
+    </footer>
+    <button id="backToTop">⬆</button>
+</body>
+<script src="script.js"></script>
+</html>

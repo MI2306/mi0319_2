@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="米哥窟HOMEPAGE">
+    <title>MI'S CAVE</title>
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="MI'S CAVE LOGO">
+                </a>
+                <p>アクセス抜群！自由に使えるレンタルスペース</p>
+            </div>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">☰ MENU</div>
+                <ul class="menu-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="rental.html">RENTAL</a></li>
+                    <li><a href="event.html">EVENT</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="access.html">ACCESS</a></li>
+                    <li class="mobile-only"><a href="https://mibooking.azurewebsites.net/booking-entry" target="_blank">BOOKING</a></li>
+                    <li class="mobile-only"><a href="https://line.me/R/ti/p/@961irevm" target="_blank">LINE</a></li>
+                </ul>
+                <a href="https://mibooking.azurewebsites.net/booking-entry" target="_blank" class="contact-btn desktop-only">BOOKING</a>
+                <a href="https://line.me/R/ti/p/@961irevm" target="_blank" class="contact-btn desktop-only">LINE</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="slideshow">
+            <div class="slide active">
+                <img src="images/index2.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="images/index1.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="images/index3.jpg" alt="Image 3">
+            </div>
+        </div>
+        <div>
+            <!-- 首頁介紹區塊 -->
+            <section class="first-section fade-in">
+                <div class="pin-left"></div> <!-- 左邊釘子 -->
+                <div class="pin-right"></div> <!-- 右邊釘子 -->
+                <h2>MI'S CAVE公式ウェブサイトへようこそ！</h2>
+                <h2>各ページ機能紹介</h2>
+                <h2>↓↓</h2>
+            </section>
+        
+            <!-- ABOUT 區塊 -->
+            <section class="additional-section fade-in">
+                <h2><span class="icon">📖</span> ABOUT</h2>
+                <hr>
+                <br>
+                <div class="sub-section">
+                    <div class="sub-item">
+                        <img src="images/index/about1.jpg" alt="About Image 1">
+                        <p>レンタルスペース紹介</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/about2.jpg" alt="About Image 2">
+                        <p>レンタルスペースの写真</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/about3.png" alt="About Image 3">
+                        <p>設備・備品</p>
+                    </div>
+                </div>
+                <a href="about.html" class="more-btn">もっと詳しく見る</a>
+            </section>
+        
+            <!-- RENTAL 區塊 -->
+            <section class="additional-section fade-in">
+                <h2><span class="icon">🏠</span> RENTAL</h2>
+                <hr>
+                <br>
+                <div class="sub-section">
+                    <div class="sub-item">
+                        <img src="images/index/rental1.jpg" alt="Rental Image 1">
+                        <p>予約システム</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/rental2.png" alt="Rental Image 2">
+                        <p>スケジュール確認</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/rental3.jpg" alt="Rental Image 3">
+                        <p>料金見積り</p>
+                    </div>
+                </div>
+                <a href="rental.html" class="more-btn">もっと詳しく見る</a>
+            </section>
+        
+            <!-- EVENT 區塊 -->
+            <section class="additional-section fade-in">
+                <h2><span class="icon">🎉</span> EVENT</h2>
+                <hr>
+                <br>
+                <div class="sub-section">
+                    <div class="sub-item">
+                        <img src="images/index/event1.jpg" alt="Event Image 1">
+                        <p>未来開催のイベント情報</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/event2.jpg" alt="Event Image 2">
+                        <p>過去のイベント情報</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/event3.png" alt="Event Image 3">
+                        <p>イベントレポート</p>
+                    </div>
+                </div>
+                <a href="event.html" class="more-btn">もっと詳しく見る</a>
+            </section>
+        
+            <!-- NEWS 區塊 -->
+            <section class="additional-section fade-in">
+                <h2><span class="icon">📰</span> NEWS</h2>
+                <hr>
+                <br>
+                <div class="sub-section">
+                    <div class="sub-item">
+                        <img src="images/index/news1.jpg" alt="News Image 1">
+                        <p>最新キャンペーン</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/news2.jpg" alt="News Image 2">
+                        <p>施設の更新情報</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/news3.jpg" alt="News Image 3">
+                        <p>点検の情報</p>
+                    </div>
+                </div>
+                <a href="news.html" class="more-btn">もっと詳しく見る</a>
+            </section>
+        
+            <!-- ACCESS 區塊 -->
+            <section class="additional-section fade-in">
+                <h2><span class="icon">📍</span> ACCESS</h2>
+                <hr>
+                <br>
+                <div class="sub-section">
+                    <div class="sub-item">
+                        <img src="images/index/access1.jpg" alt="Access Image 1">
+                        <p>交通アクセス</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/access2.jpg" alt="Access Image 2">
+                        <p>周辺のレストラン</p>
+                    </div>
+                    <div class="sub-item">
+                        <img src="images/index/access3.jpg" alt="Access Image 3">
+                        <p>周辺の観光スポット</p>
+                    </div>
+                </div>
+                <a href="access.html" class="more-btn">もっと詳しく見る</a>
+            </section>
+        </div>
+    </main>
+    <button id="backToTop">⬆</button>
+</body>
+<footer>
+    <li><small>&copy;2024 MI'S CAVE test</small></li>
+</footer>
+<script src="script.js"></script>
+</html>

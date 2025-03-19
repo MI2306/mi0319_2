@@ -1,0 +1,166 @@
+<!DOCTYPE html> <!--必要:!DOCTYPE,html,head,body-->
+<html lang="ja"> <!--ja=日本語設定-->
+<head>
+    <meta charset="utf-8"> <!--UTF8設定-->
+    <meta name="keywords" content=""><!--TAG 關鍵字-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""><!--說明文-->
+    <title>MI'S CAVE | ABOUT</title>
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="MI'S CAVE LOGO">
+                </a>
+                <p>アクセス抜群！自由に使えるレンタルスペース</p>
+            </div>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">☰ MENU</div>
+                <ul class="menu-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="rental.html">RENTAL</a></li>
+                    <li><a href="event.html">EVENT</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="access.html">ACCESS</a></li>
+                    <li class="mobile-only"><a href="https://mibooking.azurewebsites.net/booking-entry" target="_blank">BOOKING</a></li>
+                    <li class="mobile-only"><a href="https://line.me/R/ti/p/@961irevm" target="_blank">LINE</a></li>
+                </ul>
+                <a href="https://mibooking.azurewebsites.net/booking-entry" target="_blank" class="contact-btn desktop-only">BOOKING</a>
+                <a href="https://line.me/R/ti/p/@961irevm" target="_blank" class="contact-btn desktop-only">LINE</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">×</span>
+            <img id="lightbox-img" src="" alt="Zoomed Image">
+        </div>
+        <h1 class="section-title fade-in">ABOUT US</h1>
+        <section class="about-intro fade-in">
+            <div class="about-content">
+                <p>
+                    米哥窟（MI'S CAVE）は、イベントスペースや会議室として利用できる多目的レンタルスペースです。
+                    台北市中心に位置し、利便性が抜群！大小さまざまなイベントに対応し、心地よい空間を提供しています。
+                </p>
+                <p>
+                    まだイベントを開催したことがない方もぜひ挑戦してみてください。私たちはイベントの企画や相談サービスも提供しています。
+                    ここに来た皆さんが楽しく過ごせることを願っています。
+                </p>
+                <p>
+                    高品質な設備と柔軟なレイアウトを備え、多様なニーズに応えることが可能です。
+                    詳細は以下をご覧ください。
+                </p>
+            </div>
+        </section>
+        <h2 class="section-title fade-in">レンタルスペース紹介と写真</h2>
+        <section class="about-section fade-in">
+            <!-- 第一組內容：圖片在左，文字在右 -->
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="images/index1.jpg" alt="Image 1" class="zoomable-image">
+                    <p class="image-caption">＊画像をクリックすると拡大できます</p>
+                </div>
+                <div class="about-text">
+                    <p>今3フロアのレンタルスペースを提供しており、</p>
+                    <p>さまざまなニーズを持つ利用者に最適です。</p>
+                    <p>各フロア約15名程度のイベントに適しており、</p>
+                    <p>温かく自由な空間です。</p>
+                    <p>現在、完全予約制となっております。</p>
+                    <p>詳細は当サイトの予約ページをご覧ください。</p>
+                    <p><i>写真: 2階と地下室のスペース</i></p>
+                </div>
+            </div>
+    
+            <!-- image_left / text_right -->
+            <div class="about-row reverse">
+                <div class="about-image">
+                    <img src="images/about2.png" alt="space image" class="zoomable-image">
+                    <p class="image-caption">＊画像をクリックすると拡大できます</p>
+                </div>
+                <div class="about-text">
+                    <p><br><br>1階はもともとカフェスペースでしたが、</p>
+                    <p>現在店長が日本にいるため、</p>
+                    <p>一時的に営業を停止しています。</p>
+                    <p>現在は、会場提供者のオフィススペースや少人数の会議スペースとして使用されています。</p>
+                    <p><i>写真: 1階のスペース</i></p>
+                </div>
+            </div>
+            <div class="additional-gallery">
+                <p>他の写真</p>
+                <div class="image-row">
+                    <img src="images/about/about1.jpg" alt="OTHERS Image 1" class="zoomable-image">
+                    <img src="images/about/about2.jpg" alt="OTHERS Image 2" class="zoomable-image">
+                    <img src="images/about/about3.jpg" alt="OTHERS Image 3" class="zoomable-image">
+                    <img src="images/about/about4.jpg" alt="OTHERS Image 4" class="zoomable-image">
+                    <img src="images/about/about5.jpg" alt="OTHERS Image 5" class="zoomable-image">
+                </div>
+                <p class="image-caption">＊画像をクリックすると拡大できます</p>
+            </div>
+        </section>
+    
+        <h1 class="section-title fade-in">設備・備品</h1>
+    
+        <section class="equipment-section fade-in">
+            <table class="equipment-table">
+                <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>仕様/寸法</th>
+                        <th>台数</th>
+                        <th>備考</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>折りたたみ椅子</td>
+                        <td>幅 49 cm x 奥行 40 cm x 高さ 74 cm</td>
+                        <td>20脚</td>
+                        <td>イベント用に最適</td>
+                    </tr>
+                    <tr>
+                        <td>クッション</td>
+                        <td>-</td>
+                        <td>20個</td>
+                        <td>より快適な座席オプションを提供</td>
+                    </tr>
+                    <tr>
+                        <td>折りたたみテーブル</td>
+                        <td>長さ 120 cm x 幅 60 cm x 高さ 55-70 cm</td>
+                        <td>5台</td>
+                        <td>高さ調整可能</td>
+                    </tr>
+                    <tr>
+                        <td>BDプレーヤー</td>
+                        <td>-</td>
+                        <td>1台</td>
+                        <td>BD/DVD再生機能を提供</td>
+                    </tr>
+                    <tr>
+                        <td>プロジェクタースクリーン (2階) / テレビスクリーン (B1)</td>
+                        <td>150インチ</td>
+                        <td>1個</td>
+                        <td>フロアごとに異なる配置</td>
+                    </tr>
+                    <tr>
+                        <td>パソコン</td>
+                        <td>-</td>
+                        <td>1台</td>
+                        <td>ライブ配信機材は事前相談が必要</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <button id="backToTop">⬆</button>
+</body>
+<footer>
+    <li><small>&copy;2024 MI'S CAVE</small></li>
+</footer>
+<script src="script.js"></script>
+</html>
